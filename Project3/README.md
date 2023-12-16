@@ -1,4 +1,3 @@
-# Avmandal-ysampath-a3
 
 ## **Part 1:**
 ### (1)Description of how you formulated each problem; 
