@@ -6,12 +6,12 @@ One of the fundamental challenges in NLP is part-of-speech tagging, where the ai
 
 In this project, we have tried achieving results using various algorithms like Simplified and Viterbi Algorithm for predicting the tags of input sentences.
 
-'''
+~~~
 Example for train dataset
 Poet NOUN twisted VERB again ADV and CONJ Nick's NOUN knuckles NOUN scraped VERB on ADP the DET air NOUN tank NOUN , . ripping VERB off PRT the DET skin NOUN . .   
 Desperately ADV , . Nick NOUN flashed VERB one NUM hand NOUN up PRT , . catching VERB Poet's NOUN neck NOUN in ADP the DET bend NOUN of ADP his DET elbow NOUN . .   
 The DET air NOUN hose NOUN was VERB free ADJ ! . ! .  
-'''
+~~~
 
 ### (1)Description of how you formulated each problem; 
 
