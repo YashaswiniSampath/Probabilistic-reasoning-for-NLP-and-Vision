@@ -1,5 +1,8 @@
 # Probabilistic-reasoning-for-NLP-and-Vision
 
+PART 1: NLP Pos Tagging
+PART 2: Optical Character Recognition (OCR)
+
 ## **Part 1: NLP Pos Tagging**
 
 One of the fundamental challenges in NLP is part-of-speech tagging, where the aim is to label each word in a sentence with its corresponding part of speech (e.g., noun, verb, adjective). This is a crucial step towards extracting semantics from natural language text. By utilizing Bayes Nets, Simplified Algorithms, Variable Elimination Algorithms, and the Viterbi Algorithm, we can predict the tags for each word in an input sentence.
@@ -80,11 +83,12 @@ The purpose of this project is to develop an Optical Character Recognition (OCR)
 
 ### (1)Description of how you formulated each problem; 
 For each test character, the model calculates the probability it belongs to each character in the training set (TRAINLETTERS) and selects the one with the highest probability. 
-Training Image:
+Training Image:\
 <img width="1014" alt="Screenshot 2024-06-26 at 8 57 45 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/8a0936cb-aab5-45cf-b816-c52342c4c10b">
 
-Few Test Images:
+Few Test Images:\
 <img width="806" alt="Screenshot 2024-06-26 at 9 01 10 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/c9b985e9-a634-4108-acd5-4f25b393dc95">
+2.\
 <img width="998" alt="Screenshot 2024-06-26 at 9 06 03 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/d7e18f13-3d14-40ff-92b6-a2cf76e4eece">
 
 There are two parts to it:
