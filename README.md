@@ -1,6 +1,18 @@
 # Probabilistic-reasoning-for-NLP-and-Vision
 
-## **Part 1:**
+## **Part 1: NLP Pos Tagging**
+
+One of the fundamental challenges in NLP is part-of-speech tagging, where the aim is to label each word in a sentence with its corresponding part of speech (e.g., noun, verb, adjective). This is a crucial step towards extracting semantics from natural language text. By utilizing Bayes Nets, Simplified Algorithms, Variable Elimination Algorithms, and the Viterbi Algorithm, we can predict the tags for each word in an input sentence.
+
+In this project, we have tried achieving results using various algorithms like Simplified and Viterbi Algorithm for predicting the tags of input sentences.
+
+'''
+Example for train dataset
+Poet NOUN twisted VERB again ADV and CONJ Nick's NOUN knuckles NOUN scraped VERB on ADP the DET air NOUN tank NOUN , . ripping VERB off PRT the DET skin NOUN . .   
+Desperately ADV , . Nick NOUN flashed VERB one NUM hand NOUN up PRT , . catching VERB Poet's NOUN neck NOUN in ADP the DET bend NOUN of ADP his DET elbow NOUN . .   
+The DET air NOUN hose NOUN was VERB free ADJ ! . ! .  
+'''
+
 ### (1)Description of how you formulated each problem; 
 
 There are two parts to it:
@@ -35,8 +47,8 @@ We calculate the probability that the first word of the sentence is a particular
 
 **1.1 Emission probability:**
 Emission probability is calculated by P(observed word|POS)
-For this we go thorough each word and store all the words of a particular POS in the emmisionProb dictionary and maintain a count.
-We then normalise this to get the proper probability values.
+For this, we go through each word and store all the words of a particular POS in the emmisionProb dictionary and maintain a count.
+We then normalize this to get the proper probability values.
 
 **1.2 Transition Probability:**
 Transition probability is calculated by P(Ti|Ti-1):
@@ -63,12 +75,21 @@ So far scored 2000 sentences with 29442 words.
 
 
 
-## **Part 2:**
+## **Part 2: Optical Character Recognition (OCR) **
+The purpose of this project is to develop an Optical Character Recognition (OCR) system capable of accurately recognizing and extracting text from noisy images (include images with noise up to 80%).
+
 ### (1)Description of how you formulated each problem; 
+For each test character, the model calculates the probability it belongs to each character in the training set (TRAINLETTERS) and selects the one with the highest probability. 
+Training Image:
+<img width="1014" alt="Screenshot 2024-06-26 at 8 57 45 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/8a0936cb-aab5-45cf-b816-c52342c4c10b">
+
+Few Test Images:
+<img width="806" alt="Screenshot 2024-06-26 at 9 01 10 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/c9b985e9-a634-4108-acd5-4f25b393dc95">
+<img width="998" alt="Screenshot 2024-06-26 at 9 06 03 PM" src="https://github.com/YashaswiniSampath/Probabilistic-reasoning-for-NLP-and-Vision/assets/44898518/d7e18f13-3d14-40ff-92b6-a2cf76e4eece">
 
 There are two parts to it:
-1. Simplified
-2. HMM
+1. Simplified: Utilizes a straightforward method based on emission probabilities to predict the characters in the input images.
+2. HMM : Employs a more sophisticated approach using the Viterbi algorithm to consider both emission and transition probabilities, thereby improving the accuracy of character sequence predictions.
 
 a.Simplified:
 The simplified can be predicted by just considering the emission probability matrix.
@@ -116,7 +137,7 @@ prob = max(transition prob from previous layer)* emission probability for the cu
 
 ### (3) Discussion of any problems you faced, any assumptions, simplifications, and/or design decisions you made.
 
-1. Emission probability: we tried calculating the probability by just calculating the match count i.e. if train[h][w]==test[h][w] it performed very badly as it matched many spaces. Later replaced that by considering different weights for different comparisons (such as pixels, and blanks).
+1. Emission probability: Tried calculating the probability by just calculating the match count i.e. if train[h][w]==test[h][w] it performed very badly as it matched many spaces. Later replaced that by considering different weights for different comparisons (such as pixels, and blanks).
 2. Designing the dictionary for Viterbi algo computation, we designed it to store a tuple of prob and output list
 3. The Emission probability calculation after different permutations and combination of calculation probability like using : 
         math.log to minimize the compute
