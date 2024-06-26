@@ -1,6 +1,6 @@
 # Probabilistic-reasoning-for-NLP-and-Vision
 
-PART 1: NLP Pos Tagging
+PART 1: NLP Pos Tagging\
 PART 2: Optical Character Recognition (OCR)
 
 ## **Part 1: NLP Pos Tagging**
