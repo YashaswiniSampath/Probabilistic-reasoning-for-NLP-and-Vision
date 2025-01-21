@@ -2,6 +2,7 @@
 
 PART 1: NLP Pos Tagging\
 PART 2: Optical Character Recognition (OCR)
+Article Link : https://medium.com/@yashaswinisampathkumar/probabilistic-reasoning-in-ai-nlp-part-of-speech-tagging-383cce5608e0
 
 ## **Part 1: NLP Pos Tagging**
 
